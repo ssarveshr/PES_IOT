@@ -1,0 +1,20 @@
+syntax="proto3";
+
+enum sensortype{
+    UNKNOWN = 0;
+    PM25=1;
+    PM10=2;
+    CO2=3;
+    O3=4;
+    NO2=5;
+    S02=6;
+}
+message Shadow {
+	int32 sv1 = 1;
+	int32 sm1 = 2;
+	int32 sv2 = 3;
+	int32 sm2 = 4;
+	float h = 5;
+	float t1 = 6;
+	float t2 = 7;
+}
